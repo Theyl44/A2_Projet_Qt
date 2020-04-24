@@ -19,12 +19,20 @@ GameWindow3::GameWindow3(QWidget *parent)
     this->setWindowTitle("GameWindow3");
     this->setFixedSize(dx, dy);
 
+    playerView = new QGraphicsView();
+    playerView->setScene(lvl3);
+    playerView->resize(300, 300);
+    playerView->setWindowTitle(lvl3->getPlayer()->getDescription());
+    playerView->centerOn(lvl3->getPlayer());
+    playerView->show();
+
     connect(this->lvl3->getPlayer(), SIGNAL(Itswin()),this, SLOT(Itswin()));
     connect(this->lvl3->getPlayer(), SIGNAL(Itsloose()),this, SLOT(Itsloose()));
 
     QTimer* time = new QTimer();
     time->start(100);
     connect(time, SIGNAL(timeout()), this, SLOT(updatetime()));
+    connect(time, SIGNAL(timeout()), this, SLOT(scrolling()));
 
     timeprint = new QLabel(mainView);
     timeprint->setFixedSize(100,10);
@@ -42,14 +50,18 @@ void GameWindow3::updatetime(){
 void GameWindow3::Itswin() {
     VictoryWindow* victoryWindow = new VictoryWindow();
     victoryWindow->show();
-    int timeplayed = this->time;
     this->lvl3->writescore(this->time, this->lvl3->getPlayer()->getScore());
+    this->playerView->close();
     this->close();
 }
 void GameWindow3::Itsloose() {
     GameOverWindow* gameover = new GameOverWindow();
     gameover->show();
+    this->playerView->close();
     this->close();
+}
+void GameWindow3::scrolling() {
+    playerView->centerOn(lvl3->getPlayer());
 }
 
 

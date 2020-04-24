@@ -24,6 +24,7 @@ private :
 
     Level1* lvl1;
     QGraphicsView* mainView;
+    QGraphicsView* playerView;
     QDesktopWidget dw;
     float time;
     QLabel* timeprint;
@@ -36,7 +37,7 @@ public slots:
     void Itswin();
     void Itsloose();
     void updatetime();
-
+    void scrolling();
 };
 
 

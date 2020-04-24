@@ -13,12 +13,12 @@ GameWindow1::GameWindow1(QWidget *parent)
     mainView->setScene(lvl1);
     mainView->scale(0.9,0.9);
 
-//    QGraphicsView* playerView = new QGraphicsView();
-//    playerView->setScene(lvl1);
-//    playerView->resize(300, 300);
-//    playerView->setWindowTitle(lvl1->getPlayer()->getDescription());
-//    playerView->centerOn(lvl1->getPlayer());
-//    playerView->show();
+    playerView = new QGraphicsView();
+    playerView->setScene(lvl1);
+    playerView->resize(300, 300);
+    playerView->setWindowTitle(lvl1->getPlayer()->getDescription());
+    playerView->centerOn(lvl1->getPlayer());
+    playerView->show();
 
 
     this->setCentralWidget(mainView);
@@ -40,6 +40,7 @@ GameWindow1::GameWindow1(QWidget *parent)
     QTimer* time = new QTimer();
     time->start(100);
     connect(time, SIGNAL(timeout()), this, SLOT(updatetime()));
+    connect(time, SIGNAL(timeout()), this, SLOT(scrolling()));
 
 }
 void GameWindow1::updatetime(){
@@ -50,15 +51,19 @@ void GameWindow1::updatetime(){
 void GameWindow1::Itswin() {
     VictoryWindow* victoryWindow = new VictoryWindow();
     victoryWindow->show();
-    int timeplayed = this->time;
     this->lvl1->writescore(this->time, this->lvl1->getPlayer()->getScore());
+    this->playerView->close();
     this->close();
 }
 
 void GameWindow1::Itsloose() {
     GameOverWindow* gameover = new GameOverWindow();
     gameover->show();
+    this->playerView->close();
     this->close();
+}
+void GameWindow1::scrolling() {
+    playerView->centerOn(lvl1->getPlayer());
 }
 
 
