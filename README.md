@@ -1,3 +1,11 @@
+<h1>Pour les pc portables</h1>
+<p>Pour les pc portables vous pouvez rencontrer un probleme d'affichage du jeux comme il tourne en pleine écran, il y a deux solutions</p>
+<ol>
+    <li>faire tourner le jeux sur un ecran fixe</li>
+    <li>modifier la taille des applications <br> <p> >clic droit sur le bureau > parametre d'affichage > modifier la taille à 100%</p></li>
+</ol>
+<p>en effet sur certain pc portable il peut etre recommendé de le mettre a 125% pour des questions de performance</p>
+
 <h1>Description du projet</h1> 
 <ul>
     <li>Le but de ce projet est de créer un jeu d’un objet qui saute des obstacles sous formes de bars ou de vides pour arriver à une ligne d’arrivée. Cela doit être établi en utilisant les flèches du clavier</li> 
