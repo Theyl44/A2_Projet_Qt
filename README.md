@@ -31,5 +31,8 @@
     <li>https://www.youtube.com/watch?v=c4b9lCfSDQM</li>
     <li>https://www.youtube.com/watch?v=kvrAAP_ayWI&list=PLyb40eoxkelOa5xCB9fvGrkoBf8JzEwtV&index=2</li>
     <li>Qt Documentation : https://www.qt.io/</li>
+    <li>Qt Forum : https://forum.qt.io/topic/60314/style-sheets-with-centralwidget</li>
+    <li>Qt Example : https://doc.qt.io/qt-5/qtwidgets-graphicsview-collidingmice-example.html</li>
     <li>Projet SceneVue  par    A. KARINE</li>
 </ul>
+
