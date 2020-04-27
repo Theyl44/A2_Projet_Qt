@@ -7,12 +7,14 @@
 
 #include <QMainWindow>
 #include <QPushButton>
+#include <QDesktopWidget>
 
 class MenuLevel : public QMainWindow {
     Q_OBJECT
 
 public:
     MenuLevel(QWidget *parent = nullptr);
+    QDesktopWidget dw;
 
 public slots:
     void pressMainPage();

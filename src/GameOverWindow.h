@@ -7,12 +7,14 @@
 
 #include <QMainWindow>
 #include <QPushButton>
+#include <QDesktopWidget>
 
 class GameOverWindow: public QMainWindow {
     Q_OBJECT
 
 public:
     GameOverWindow(QWidget *parent = nullptr);
+    QDesktopWidget dw;
 
 public slots:
     void pressMainPage();

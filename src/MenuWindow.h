@@ -13,7 +13,7 @@
 #include "GameWindow1.h"
 #include "GameWindow2.h"
 #include "GameWindow3.h"
-
+#include <QDesktopWidget>
 
 #include "MenuLevel.h"
 #include "tuto1.h"
@@ -27,6 +27,7 @@ class MenuWindow : public QMainWindow {
 
 public:
     MenuWindow(QWidget *parent = nullptr);
+    QDesktopWidget dw;
 
 public slots:
     void pressbPLay();

@@ -8,12 +8,13 @@
 #include <QMainWindow>
 #include <QWidget>
 #include <QPushButton>
-
+#include <QDesktopWidget>
 class tuto3 : public QMainWindow {
 Q_OBJECT
 
 public:
     tuto3(QWidget *parent = nullptr);
+    QDesktopWidget dw;
 
 public slots:
     void pressMainMenu();

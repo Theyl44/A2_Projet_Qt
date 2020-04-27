@@ -10,10 +10,10 @@ tuto1 :: tuto1(QWidget *parent )
         :QMainWindow(parent)
 {
     this->setWindowTitle("Theo LOPEZ");
-    this->setFixedSize(1920,1080);
+    this->setFixedSize(dw.width(),dw.height());
 
     QWidget* window = new QWidget(this);
-    window->setFixedSize(1920,1080);
+    window->setFixedSize(dw.width(),dw.height());
 
     this->setCentralWidget(window);
     this->setCursor(Qt::CrossCursor);

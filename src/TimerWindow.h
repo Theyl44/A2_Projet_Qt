@@ -9,7 +9,7 @@
 #include <QWidget>
 #include <QPushButton>
 #include <QTextStream>
-
+#include <QDesktopWidget>
 #include "MenuWindow.h"
 
 class TimerWindow : public QMainWindow {
@@ -19,6 +19,8 @@ private:
     QWidget* window;
 public:
     TimerWindow(QWidget *parent = nullptr);
+    QDesktopWidget dw;
+
 public slots:
     void pressMainMenu();
     void pressReset();
