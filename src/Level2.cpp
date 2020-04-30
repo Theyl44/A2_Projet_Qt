@@ -6,7 +6,7 @@
 #include <QFile>
 #include <QTextStream>
 using namespace std;
-
+//MEME CHOSE QUE POUR LES NIVEAUX 1 ET 3
 Level2::Level2(){
     this->background.load("../img/level2/FondEspace.png");
     this->setSceneRect(0, 0, background.width(), background.height());

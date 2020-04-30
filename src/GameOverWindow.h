@@ -8,7 +8,7 @@
 #include <QMainWindow>
 #include <QPushButton>
 #include <QDesktopWidget>
-
+//FENETRE QUAND LE JOUEUR A PERDU ex) quand un joueur est allé dans des flammes
 class GameOverWindow: public QMainWindow {
     Q_OBJECT
 

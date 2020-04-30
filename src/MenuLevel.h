@@ -8,7 +8,7 @@
 #include <QMainWindow>
 #include <QPushButton>
 #include <QDesktopWidget>
-
+//PAGE INTERMEDAIRE POUR CHOISIR LE NIVEAU QU'ON VEUT
 class MenuLevel : public QMainWindow {
     Q_OBJECT
 

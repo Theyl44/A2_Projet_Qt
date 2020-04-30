@@ -5,7 +5,7 @@
 #include "MenuLevel.h"
 #include "MenuWindow.h"
 #include "Level1.h"
-
+//ICI ON A BCP DE BOUTONS QUI VONT REDIRIGER VERS LES FENETRES DES NIVEAUX
 MenuLevel::MenuLevel(QWidget *parent)
     : QMainWindow(parent)
 {

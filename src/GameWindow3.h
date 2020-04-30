@@ -16,7 +16,7 @@
 #include <QLabel>
 #include <QString>
 
-
+//MEME CHOSE QUE POUR LES NIVEAU 1 et 2
 class GameWindow3 : public QMainWindow
 {
 Q_OBJECT

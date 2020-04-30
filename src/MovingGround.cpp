@@ -3,6 +3,7 @@
 //
 
 #include "MovingGround.h"
+//POUR QUE LA PLATEFORME BOUGE SELON L'AXE X ET QU'IL FASSE DES ALLEE RETOUR
 void MovingGround::moveR() {
     if(this->right){
         if(this->pos().x() < this->currentX + this->longeur){

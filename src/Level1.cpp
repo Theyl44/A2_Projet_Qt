@@ -8,12 +8,13 @@
 using namespace std;
 
 Level1::Level1() {
+    //ON INIT LE NIVEAU AVEC LES IMAGES
     this->background.load("../img/level1/FondEspace.png");
     this->setSceneRect(0, 0, background.width(), background.height());
 
     this->player = new Player("player", "../img/level1/player.png", 2 , background.height() -144 -23);
     this->addItem(player);//144 sur 100 player.png
-
+    //COMME LES IMAGES SONT PREVU POUR CE NIVEAU ON PEUT SE PERMETTRE DE LES PLACER AUX COO 0,0
     Ground* floor1 = new Ground("1floor", "../img/level1/1floor.png", 0, 0);
     Ground* floor2 = new Ground("2floor", "../img/level1/2floor.png",0,0);
     Ground* moon = new Ground(  "moon", "../img/level1/moon.png",0,0);
@@ -26,6 +27,7 @@ Level1::Level1() {
     Piece* c2 = new Piece("c2", "../img/level1/Coins.png",1665,763);
     Piece* c3 = new Piece("c3", "../img/level1/Coins.png",776,503);
 
+    //ON AJOUTE LES OBJET DANS LE THIS
     this->addItem(floor1);
     this->addItem(floor2);
     this->addItem(moon);
@@ -39,6 +41,7 @@ Level1::Level1() {
     this->addItem(c3);
 
 }
+//ON VA ECRIRE LE SCORE DANS UN FICHIER PRECIS QUAND LE JOUEUR A GAGNE LE NIVEAU
 void Level1::writescore(float time, int score){
     QString filePath = "../resultat/timer-score1.txt";
     QFile file(filePath);
@@ -63,6 +66,7 @@ void Level1::writescore(float time, int score){
 
     file.close();
 }
+//SURCHARGE DE LA FONTION DRAWBACKGROUND DONNEE PAR M KARINE
 void Level1::drawBackground(QPainter *painter, const QRectF &rect) {
     Q_UNUSED(rect);
     painter->drawPixmap(QRectF(0,0,background.width(), background.height()), background, sceneRect());

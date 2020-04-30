@@ -6,7 +6,7 @@
 #include <QFile>
 #include <QTextStream>
 using namespace std;
-
+//MEME CHOSE QUE POUR LES NIVEAU 1 ET 2
 Level3::Level3(){
     //on ajoute nos classes / background
     this->background.load("../img/level3/fond.png");

@@ -9,6 +9,7 @@
 #include <QWidget>
 #include <QPushButton>
 #include <QDesktopWidget>
+//MEME CHOSE QUE POUR LE TUTO DE LA PAGE 1 ET 2
 class tuto3 : public QMainWindow {
 Q_OBJECT
 

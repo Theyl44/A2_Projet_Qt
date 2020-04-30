@@ -7,7 +7,7 @@
 
 
 #include <QtWidgets/QGraphicsItem>
-
+//OBJET QUI VA INCREMENTER LE SCORE DU JOUEUR, IL A 3 PIECES PAR NIVEAU
 class Piece : public QObject , public QGraphicsPixmapItem{
 Q_OBJECT
 private:

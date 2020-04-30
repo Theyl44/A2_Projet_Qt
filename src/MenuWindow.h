@@ -21,7 +21,7 @@
 
 using namespace std;
 
-
+//FENETRE DU MENU DU JEUX QUI REDIRIGE VERS LES PAGES CHOISIS
 class MenuWindow : public QMainWindow {
  Q_OBJECT
 

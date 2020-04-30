@@ -3,6 +3,7 @@
 //
 
 #include "TimerWindow.h"
+//MENU QUI VA AFFCIHER LES SCORES DU JOUEUR S'ILS EXISTENT
 TimerWindow::TimerWindow(QWidget *parent)
     :QMainWindow(parent)
 {
@@ -92,6 +93,7 @@ void TimerWindow:: pressMainMenu() {
     menu->show();
     this->close();
 }
+//OPTION QUI VA REFRESH LES SCORES DE TOUS LES NIVEAUX
 void TimerWindow:: pressReset() {
     QString filePath = "../resultat/timer-score1.txt";
     QFile file(filePath);

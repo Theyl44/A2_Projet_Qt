@@ -3,6 +3,7 @@
 GameWindow1::GameWindow1(QWidget *parent)
         : QMainWindow(parent)
 {
+    //INIT DU NIVEAU
     time = 0 ;
     int dx=dw.width();
     int dy=dw.height();
@@ -25,7 +26,7 @@ GameWindow1::GameWindow1(QWidget *parent)
     this->setWindowTitle("GameWindow1");
     this->setFixedSize(dx, dy);
 
-
+    //AFFICHAGE DE LA FENETRE : SCORE ET LE TEMPS
     timeprint = new QLabel(mainView);
     timeprint->setFixedSize(100,10);
     timeprint->move(20, 950);
@@ -34,12 +35,15 @@ GameWindow1::GameWindow1(QWidget *parent)
     scoreprint->setFixedSize(100,10);
     scoreprint->move(20, 925);
 
+    //CONNECT
     connect(this->lvl1->getPlayer(), SIGNAL(Itswin()),this, SLOT(Itswin()));
     connect(this->lvl1->getPlayer(), SIGNAL(Itsloose()),this, SLOT(Itsloose()));
 
     QTimer* time = new QTimer();
     time->start(100);
+    //POUR FAIRE AVANCER LE TEMPS QU'ON AFFICHE ON APPEL CETTE FONCTION TOUTES LES 100 ms
     connect(time, SIGNAL(timeout()), this, SLOT(updatetime()));
+    //POUR QUE LA FENETRE SOIT CENTREE SUR LE PERSONNAGE
     connect(time, SIGNAL(timeout()), this, SLOT(scrolling()));
 
 }

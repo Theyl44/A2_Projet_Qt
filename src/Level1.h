@@ -21,6 +21,7 @@
 #include "FinalFlag.h"
 #include "Piece.h"
 
+//OBJET QUI VA CONTENIR LE JOUEURS ET TOUS NOS OBJET ex) obstacle et ou sol ...
 class Level1 : public QGraphicsScene {
 Q_OBJECT
 

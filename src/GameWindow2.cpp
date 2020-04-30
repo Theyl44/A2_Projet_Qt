@@ -1,5 +1,5 @@
 #include "GameWindow2.h"
-
+//MEME CHOSE QUE POUR LES NIVEAU 1 et 3
 GameWindow2::GameWindow2(QWidget *parent)
         : QMainWindow(parent)
 {

@@ -9,6 +9,7 @@
 GameOverWindow::GameOverWindow(QWidget *parent)
     : QMainWindow(parent)
 {
+    //INIT
     this->setWindowTitle("Théo LOPEZ");
     this->setFixedSize(dw.width(),dw.height());
 
@@ -21,6 +22,8 @@ GameOverWindow::GameOverWindow(QWidget *parent)
     centralWidget()->setObjectName("window");
     centralWidget()->setStyleSheet("QWidget #window { background-image : url(../img/menu/GameOver.png);}");
 
+
+    // LES BOUTONS DU MENU
     QPushButton* bMainMenu = new QPushButton(window);
     bMainMenu->setCursor(Qt::PointingHandCursor);
     bMainMenu->setFixedSize(162,142);
@@ -42,12 +45,12 @@ GameOverWindow::GameOverWindow(QWidget *parent)
     bQuit->setIcon(QIcon("../img/Bouton/quit.png"));
     bQuit->setIconSize(QSize(162,142));
 
-
+    //LES CONNECT POUR ANIMER LA FENETRE
     connect(bQuit, SIGNAL(clicked()), this, SLOT(close()));
     connect(bRestart, SIGNAL(clicked()), this, SLOT(restart()));
     connect(bMainMenu, SIGNAL(clicked()), this, SLOT(pressMainPage()));
 }
-
+//POUR DEPLACER LE PERSONNAGE EST UTILISE POUR NE PAS OUVRIR PLUSIEURS FOIS LA FENETRE GAME OVER QUAND ON A PERDUS
 void GameOverWindow::restart() {
     MenuLevel* menu = new MenuLevel();
     menu->show();

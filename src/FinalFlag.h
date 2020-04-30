@@ -5,7 +5,7 @@
 #ifndef PROJETQT_FINALFLAG_H
 #define PROJETQT_FINALFLAG_H
 
-
+//un objet qui va servir d'arrvier et qui va fermer la fenetre quand il est en contact avec le joueur et va afficher la fenetre de victoire
 #include <QtWidgets/QGraphicsItem>
 
 class FinalFlag : public QObject , public QGraphicsPixmapItem{

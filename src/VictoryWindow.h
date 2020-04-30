@@ -7,7 +7,7 @@
 
 #include <QMainWindow>
 #include <QPushButton>
-
+//FENETRE D'AFFICHAGE QUAND LE JOUEUR A GAGNER CAD QUAND IL EST EN CONTACT AVEC L'OBJET FINAL FLAG
 class VictoryWindow : public QMainWindow {
 Q_OBJECT
 

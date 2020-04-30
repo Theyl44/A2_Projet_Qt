@@ -7,7 +7,7 @@
 
 
 #include <QtWidgets/QGraphicsItem>
-
+//OBJET SUR LEQUEL LE JOUEUR VA POUVOIR SE TENIR
 class Ground : public QObject , public QGraphicsPixmapItem{
 Q_OBJECT
 private:

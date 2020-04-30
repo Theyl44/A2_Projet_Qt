@@ -10,7 +10,7 @@
 #include <iostream>
 #include "Player.h"
 using namespace std;
-
+//OBJET RAJOUTE POUR LE LEVEL2 QUE LE JOUEUR EST DESSUS IL VA REBOMDIR
 class MovingGround : public QObject , public QGraphicsPixmapItem{
 Q_OBJECT
 private:

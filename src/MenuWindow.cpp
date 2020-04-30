@@ -3,6 +3,7 @@
 //
 
 #include "MenuWindow.h"
+//LE MENU DU JEUX
 MenuWindow::MenuWindow(QWidget *parent)
 : QMainWindow(parent)
 {

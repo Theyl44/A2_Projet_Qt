@@ -15,7 +15,7 @@
 #include <QLabel>
 #include <QString>
 
-
+//CLASSE QUI VA CONTENIR TOUS NOS OBJTS D'UN NIVEAU
 class GameWindow1 : public QMainWindow
 {
 Q_OBJECT

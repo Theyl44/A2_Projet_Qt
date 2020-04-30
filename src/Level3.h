@@ -20,7 +20,7 @@
 #include "Flammes.h"
 #include "FinalFlag.h"
 #include "Piece.h"
-
+//MEME CHOSE QUE POUR LES NIVEAUX 1 ET 2
 class Level3 : public QGraphicsScene {
 Q_OBJECT
 

@@ -7,7 +7,7 @@
 
 
 #include <QtWidgets/QGraphicsItem>
-
+//OBJET QUI VA AUGMENTER LA HAUTEUR DE SAUT DU PERSONNAGE
 class JetPack : public QObject , public QGraphicsPixmapItem{
 Q_OBJECT
 private:

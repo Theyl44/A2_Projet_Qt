@@ -11,7 +11,7 @@
 #include <QTextStream>
 #include <QDesktopWidget>
 #include "MenuWindow.h"
-
+//PANNEAU DES SCORES
 class TimerWindow : public QMainWindow {
 Q_OBJECT
 

@@ -6,7 +6,7 @@
 #define PROJETQT_WALL_H
 
 #include <QtWidgets/QGraphicsItem>
-
+//OBJET QUI VA DERANGER LE JOUEUR CAD QU4IL NE VA PAS POUVOIR LE DEPLACER A TRAVERS
 class Wall : public QObject , public QGraphicsPixmapItem{
     Q_OBJECT
 private:

@@ -5,6 +5,7 @@
 #ifndef PROJETQT_FLAMMES_H
 #define PROJETQT_FLAMMES_H
 
+//objet qui va etre le danger de certain niveau car quand il rentre en contact avec le joueur il va fermer la fenetre et afficher la fenetre de gameover
 #include <QtWidgets/QGraphicsItem>
 
 class Flammes  : public QObject , public QGraphicsPixmapItem {

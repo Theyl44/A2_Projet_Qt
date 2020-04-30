@@ -22,7 +22,7 @@
 #include "FinalFlag.h"
 #include "Piece.h"
 #include "MovingGround.h"
-
+//MEME CHOSE QUE POUR LES NIVEAUX 1 ET 3
 class Level2 : public QGraphicsScene{
 Q_OBJECT
 

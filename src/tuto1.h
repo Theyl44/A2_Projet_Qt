@@ -9,7 +9,7 @@
 #include <QWidget>
 #include <QPushButton>
 #include <QDesktopWidget>
-
+//FENETRE QUI EXPLIQUE LE COMPORTEMENT DU JEUX ET L'OBJECTIF DU PROJET SUR PLUSIEURS PAGE
 class tuto1 : public QMainWindow {
 Q_OBJECT
 
